@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Wave Technologies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Existing content here -->
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="faq-content">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">What services do you offer?</button>
+                <div class="faq-answer">
+                    <p>We offer a range of technology services including web development, mobile app development, and IT consulting.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How can I contact support?</button>
+                <div class="faq-answer">
+                    <p>You can contact our support team via the Contact Us form on our website or by emailing support@pixelwave.com.</p>
+                </div>
+            </div>
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </section>
+
+    <!-- Pop-up Modals for Terms of Service and Contact Us -->
+    <div id="terms-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Terms of Service</h2>
+            <p>Our terms of service are outlined here...</p>
+        </div>
+    </div>
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <!-- Replace 'logo.png' with your actual logo file -->
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <a href="#privacy" class="footer-link" data-modal="terms-modal">Terms of Service</a>
+                <a href="#contact" class="footer-link" data-modal="contact-modal">Contact Us</a>
+                <a href="#faq" class="footer-link">FAQ</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
